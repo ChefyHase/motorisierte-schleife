@@ -1,6 +1,6 @@
 <template lang="pug">
   div
-    section.hero.is-light.is-fullheight.is-bold
+    section.hero.is-fullheight.is-bold.has-bg-img
       .hero-head
         Navibar
       .hero-body
@@ -24,7 +24,14 @@ div {
   font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
+.has-bg-img {
+  background: url('~assets/indexBackground.jpg');
+  background-size: cover;
+  position: relative;
+}
+
 .hero-body h1 {
   font-size: 5rem;
+  text-shadow: 2px 2px 2px gray;
 }
 </style>
