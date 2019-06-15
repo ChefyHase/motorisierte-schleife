@@ -12,7 +12,7 @@
     "build": "nuxt build",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "nuxt generate",
-    "deploy": "npx gh-pages -d dist -b gh-pages"
+    "deploy": "npx gh-pages -d dist -b gh-pages -a"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
