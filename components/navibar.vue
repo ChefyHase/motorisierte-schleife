@@ -2,8 +2,8 @@
   nav.navbar
     .navbar-menu
       .navbar-end
-        a.navbar-item(href="/") Home
-        a.navbar-item(href="/about") About
+        a.navbar-item(href="/motorisierte-schleife") Home
+        a.navbar-item(href="/motorisierte-schleife/about") About
         span.navbar-item
           a.button.is-black.is-inverted(href="https://github.com/ChefyHase")
             span.icon
