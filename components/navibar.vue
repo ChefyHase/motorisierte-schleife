@@ -1,6 +1,12 @@
 <template lang="pug">
   nav.navbar
-    .navbar-menu
+    .navbar-brand
+      a(role="button" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" @click="toggle").navbar-burger.burger
+        span.has-text-danger
+        span.has-text-danger
+        span.has-text-danger
+
+    .navbar-menu#navbarBasicExample
       .navbar-end
         a.navbar-item(href="/motorisierte-schleife") Home
         a.navbar-item(href="/motorisierte-schleife/about") About
@@ -20,3 +26,30 @@
               i.fab.fa-twitter
             span Twitter
 </template>
+
+<script>
+export default {
+  methods: {
+    toggle() {
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll('.navbar-burger'),
+        0
+      )
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target
+          const $target = document.getElementById(target)
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle('is-active')
+          $target.classList.toggle('is-active')
+        })
+      }
+    }
+  }
+}
+</script>
