@@ -10,6 +10,12 @@
       .navbar-end
         a.navbar-item(href="/motorisierte-schleife") Home
         a.navbar-item(href="/motorisierte-schleife/about") About
+        .navbar-item.has-dropdown.is-hoverable
+          a.navbar-link Works
+          .navbar-dropdown
+            a.navbar-item(href="/motorisierte-schleife/works/discography") Discography
+            a.navbar-item(href="/motorisierte-schleife/works/software") Software
+
         span.navbar-item
           a.button.is-black.is-inverted(href="https://github.com/ChefyHase")
             span.icon
